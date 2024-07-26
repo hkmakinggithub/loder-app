@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .body{
+        background-color: #372e2edd;
+        perspective: 600px;
+    }
+    hr{
+        margin: 20px;
+    }
+    .loader1{
+        width: 80px;
+        margin: 12px auto;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid #3498db;
+        border-left: red 3px solid;
+        animation: torning 1s infinite ease-out;
+        /* transform-style: preserve-3d; */
+
+    }
+    @keyframes torning{
+        0%{
+            transform: rotate(0deg);
+            transform-style: preserve-3d;
+        }
+        100%{
+            transform: rotate(360deg);
+            transform-style: preserve-3d;
+        }
+    }
+    .loader2{
+        width: 80px;
+        margin: 12px auto;
+        height: 80px;
+        border-radius: 50%;
+        border: 3px solid #000;
+        border-left: red 3px solid;
+        animation: div1 4s infinite linear;
+        transform-style: preserve-3d;
+        margin-top: 20%;
+
+    }
+    .loader2 >div{
+        width: 60px;
+        margin: 7px;
+        height: 60px;
+        border-radius: 20%;
+        border: 3px solid #000;
+        border-left: red 3px solid;
+        animation: div2 3s infinite linear;
+        transform-style: preserve-3d;
+
+    }
+    .loader2 div>div{
+        width: 40px;
+        margin: 7px;height: 40px;border-radius: 50%;
+        border:3px solid #000;
+border-top: red 3px solid;
+transform-style: preserve-3d;
+animation: div3 2.5s infinite linear;
+
+    }
+@keyframes div1{
+    0%{
+        transform: rotate(-0deg) rotateX(0);
+    }
+    100%{
+        transform: rotate(-360deg) rotateX(360deg);
+    }
+}
+@keyframes div2{
+    0%{
+        transform: rotate(-0deg) rotateX(0);
+    }
+    100%{
+        transform: rotate(-360deg) rotateX(360deg);
+    }
+}
+@keyframes div3{
+    0%{
+        transform: rotate(-0deg) rotateX(0);
+    }
+    100%{
+        transform: rotate(-360deg) rotateX(360deg);
+    }
+}
+</style>
+<body>
+    <!-- <div class="loader1">
+        <div class="loader1">
+            <div class="loader1"></div>
+        </div>
+    </div>
+    <hr> -->
+    <div class="loader2"><div>
+<div class="">
+
+</div></div>
+</div>
+
+</body>
+</html>
